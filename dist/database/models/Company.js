@@ -32,6 +32,6 @@ exports.initCompanyInfo = async function () {
     console.log('Company count', count);
     console.log('Insert one company info');
     if (count === 0) {
-        let res = await Company.create({ companyName: '第一个公司',companyAddress:'第一个公司的地址'});
+        await Company.create({ companyName: '第一个公司',companyAddress:'第一个公司的地址'});
     }
 };
